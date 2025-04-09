@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="K-Bike - Your one-stop shop for motorcycle parts and accessories"
+    />
+    <title>K-Bike - Motorcycle Parts and Accessories</title>
+    <link rel="stylesheet" href="kHomePage.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="primary-nav">
+        <div class="logo-container">
+          <span class="logo-text">K-Bike</span>
+        </div>
+        <div class="nav-links" data-el="div-1">
+          <a class="nav-link" href="./kHomePage.html">Home</a>  
+          <a class="nav-link" href="./kProfile.html">Profile</a>
+          <a class="nav-link" href="./kContact.html">Contact</a>
+          <a class="nav-link" href="/about">About Us</a>
+          <button class="logout-btn" href="./kLogin.html">Logout</button>
+        </div>
+        <button class="menu-toggle" data-el="button-1" aria-label="Toggle menu">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </button>
+      </nav>
+      <nav class="secondary-nav" aria-label="Product categories">
+        <div class="category-links">
+          <a class="category-link" href="/accessories"
+            >Motorcycle Accessories</a
+          >
+          <a class="category-link" href="/tires">Tires</a>
+          <a class="category-link" href="/parts">Spare Parts</a>
+          <a class="category-link" href="/services">Repair Services</a>
+          <a class="category-link" href="/lubricants">Lubricants</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="products-section">
+        <h2 class="section-title">Our Products</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              alt="K1 Motorcycle mirror"
+              src="./kHomePageImg/guonf xe.jpeg"
+              class="product-image"
+            />
+            <h3 class="product-title">K1: Motorcycle rearview mirror</h3>
+            <p class="product-price">$20</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img
+              alt="K2 Red saddle"
+              src="./kHomePageImg/xe do.jpeg"
+              class="product-image"
+            />
+            <h3 class="product-title">K2 Red: Motorcycle saddle</h3>
+            <p class="product-price">$20</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img
+              alt="K2 Black storage bag"
+              src="./kHomePageImg/Bag1.jpeg"
+              class="product-image"
+            />
+            <h3 class="product-title">K2 Black: Storage bag</h3>
+            <p class="product-price">$20</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="brands-section">
+        <h2 class="section-title">Our Trusted Brands</h2>
+        <div class="brand-grid">
+          <img alt="K-Factory logo" src="./kHomePageImg/honda-civic.png" class="brand-logo first-logo" />
+          <img
+            alt="Koshuba logo"
+            src="./kHomePageImg/volvo.jpeg"
+            class="brand-logo"
+          />
+          <img
+            alt="Komine logo"
+            src="./kHomePageImg/tesla.jpeg"
+            class="brand-logo"
+          />
+          <img
+            alt="Honda logo"
+            src="./kHomePageImg/nggaHonda.jpeg"
+            class="brand-logo"
+          />
+          <img
+            alt="Brand logo"
+            src="./kHomePageImg/vsspa.jpeg"
+            class="brand-logo"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright ©2025 K-Bike All rights reserved.</p>
+    </footer>
+
+    <script src="kHomePage.js"></script>
+  </body>
+</html>

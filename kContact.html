@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - K-Bike</title>
+    <link rel="stylesheet" href="kContact.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="logo">K-Bike</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/about">About Us</a>
+          <a class="nav-link nav-link-small" href="/cart">Cart</a>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <h1 class="page-title">Contact Us</h1>
+        <div class="contact-container" stackColumnsAt="tablet">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="form-textarea"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info-wrapper">
+            <div class="contact-info">
+              <h2 class="info-title">Contact Information</h2>
+
+              <section class="info-section">
+                <h3 class="info-subtitle">Address</h3>
+                <p>123 Bike Street, Cycling City, CC 12345</p>
+              </section>
+
+              <section class="info-section">
+                <h3 class="info-subtitle">Phone</h3>
+                <p>(555) 123-4567</p>
+              </section>
+
+              <section class="info-section">
+                <h3 class="info-subtitle">Email</h3>
+                <p>info@k-bike.com</p>
+              </section>
+
+              <section class="info-section">
+                <h3 class="info-subtitle">Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="kContact.css"></script>
+  </body>
+</html>

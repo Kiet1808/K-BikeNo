@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-bike - Motorcycle Parts and Accessories</title>
+    <link rel="stylesheet" href="kHome.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-banner">
+        <span
+          >Always have new genuine spare parts - Join to order now&nbsp;</span
+        >
+        <button class="cta-button" onclick="window.location.href='kLogin.html'">Join Now</button>
+      
+      <nav class="main-nav">
+        <div class="logo-container">
+          
+          <span class="brand-name">K-bike</span>
+        </div>
+        <div class="search-container">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search products"
+          />
+          <button aria-label="Search" class="search-button">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+        <button
+          aria-label="Toggle menu"
+          class="menu-toggle"
+          aria-expanded="false"
+        >
+          <div class="hamburger-icon"></div>
+        </button>
+        <div class="nav-links" aria-label="Main navigation">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/contact">Contact</a>
+          <a class="nav-link" href="/instructions">Instructions</a>
+          <a class="cart-link" href="/cart">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+              <path d="M20 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span>Cart</span>
+          </a>
+          <div class="auth-container">
+            <button class="auth-button">Login / Register</button>
+          </div>
+        </div>
+      </nav>
+      <div class="categories-nav">
+        <a class="category-link" href="/category/motorcycle-accessories"
+          >Motorcycle Accessories</a
+        >
+        <a class="category-link" href="/category/motorcycle-tires"
+          >Motorcycle Tires</a
+        >
+        <a class="category-link" href="/category/repair-services"
+          >Repair Services</a
+        >
+        <a class="category-link" href="/category/motorcycle-oil"
+          >Motorcycle Oil</a
+        >
+        <a class="category-link" href="/category/motorcycle-spare-parts"
+          >Motorcycle Spare Parts</a
+        >
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="featured-section">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-content">
+              <img
+                alt="Motorcycle Gear Sprocket"
+                src="./kHomeImg/k1 2.jpg"
+                class="product-image"
+              />
+              <h3>Premium Gear</h3>
+              <p>Part1</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-content">
+              <img
+                alt="Motorcycle Crankshaft"
+                src="./kHomeImg/k23.jpg"
+                class="product-image"
+              />
+              <h3>Performance Black</h3>
+              <p>B1</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-content">
+              <img alt="Motorcycle Oil" src="./kHomeImg/k1 1.jpg" class="product-image" />
+              <h3>Prime G</h3>
+              <p>The best mirror in the world</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>©2025 K-Bike All rights reserved</p>
+      </div>
+    </footer>
+    <script src="kHome.js"></script>
+  </body>
+</html>

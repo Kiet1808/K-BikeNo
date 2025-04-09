@@ -1,0 +1,305 @@
+.header {
+  background-color: white;
+}
+
+.top-banner {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.cta-button {
+  margin-left: 1rem;
+  padding: 0.25rem 1rem;
+  background-color: white;
+  color: #0066cc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+.main-nav {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: auto;
+  height: 40px;
+  overflow: hidden;
+}
+
+.brand-name {
+  color: #0066cc;
+  font-family:
+    AR One Sans,
+    sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  margin: 0 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 36px 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.search-button {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #666;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+}
+
+.hamburger-icon::before {
+  transform: translateY(-8px);
+}
+
+.hamburger-icon::after {
+  transform: translateY(6px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0066cc;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-link:hover {
+  color: #0066cc;
+}
+
+.auth-container {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.auth-button:hover {
+  color: #0066cc;
+}
+
+.categories-nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  gap: 2rem;
+}
+
+.category-link {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.category-link:hover {
+  background-color: #0066cc;
+  color: white;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.featured-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.products-grid {
+  gap: 20px;
+  display: flex;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  line-height: normal;
+  width: 33%;
+}
+
+.product-content {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.main-footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .products-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-nav {
+    padding: 0.5rem;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .categories-nav {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}

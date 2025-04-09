@@ -1,0 +1,256 @@
+/* Header and Navigation */
+.header {
+    background-color: #ffffff;
+  }
+  
+  .primary-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #22c55e;
+    margin-right: 2rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #0066cc;
+  }
+  
+  .logout-btn {
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #ff4d4d;
+  }
+  
+  .logout-btn:hover {
+    background-color: #ff3333;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .menu-bar {
+    width: 24px;
+    height: 2px;
+    background-color: #333333;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+  
+  .secondary-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: rgba(248, 249, 250, 0.52);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-links {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+  
+  .category-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .category-link:hover {
+    color: #22c55e;
+  }
+  
+  /* Main Content */
+  .main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .products-section {
+    margin-bottom: 4rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .product-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product-image {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .product-title {
+    margin: 1rem 0;
+  }
+  
+  .product-price {
+    color: #22c55e;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #22c55e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #16a34a;
+  }
+  
+  .brands-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .brands-section .section-title {
+    text-align: center;
+  }
+  
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .brand-logo {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .first-logo {
+    aspect-ratio: 0.98;
+    margin-top: 8px;
+    margin-bottom: 3px;
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .brand-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .primary-nav {
+      padding: 0.5rem;
+    }
+  
+    .logo-text {
+      font-size: 24px;
+      margin-right: 1rem;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .secondary-nav {
+      overflow-x: auto;
+      padding: 0.5rem;
+    }
+  
+    .category-links {
+      gap: 1rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .brand-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

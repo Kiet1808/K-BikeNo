@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="kProfile.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">K-Bike</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#" aria-current="page">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="profile-container">
+        <div class="profile-grid">
+          <aside class="profile-sidebar">
+            <div class="profile-card">
+              <img
+                class="profile-image"
+                src="./kProfileImg/NGUOI QUE.jpg"
+                alt="Profile photo of John Smith"
+              />
+              <h2 class="profile-name"></h2>
+            </div>
+          </aside>
+
+          <div class="profile-details">
+            <section class="info-section" aria-labelledby="basic-info">
+              <h2 id="basic-info" class="section-title">Basic Information</h2>
+              <div class="form-group">
+                <label class="form-label" for="address">Address:</label>
+                <template data-el="show">
+                  <input
+                    id="address"
+                    class="form-input"
+                    data-el="input-1"
+                    aria-label="Edit address"
+                  />
+                </template>
+                <template data-el="show-2">
+                  <p class="info-text"></p>
+                </template>
+              </div>
+            </section>
+
+            <section class="info-section" aria-labelledby="contact-info">
+              <h2 id="contact-info" class="section-title">
+                Contact Information
+              </h2>
+              <div class="form-group">
+                <label class="form-label" for="email">Email:</label>
+                <template data-el="show-3">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-input"
+                    data-el="input-3"
+                    aria-label="Edit email"
+                  />
+                </template>
+                <template data-el="show-4">
+                  <p class="info-text"></p>
+                </template>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone:</label>
+                <template data-el="show-5">
+                  <input
+                    id="phone"
+                    type="tel"
+                    class="form-input"
+                    data-el="input-5"
+                    aria-label="Edit phone"
+                  />
+                </template>
+                <template data-el="show-6">
+                  <p class="info-text"></p>
+                </template>
+              </div>
+            </section>
+
+            <div class="button-group">
+              <template data-el="show-7">
+                <button class="btn btn-secondary" data-el="button-1">
+                  Cancel
+                </button>
+                <button class="btn btn-primary" data-el="button-2">
+                  Save Changes
+                </button>
+              </template>
+              <template data-el="show-8">
+                <button class="btn btn-primary" data-el="button-3">
+                  Edit Profile
+                </button>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="kProfile.js"></script>
+  </body>
+</html>
